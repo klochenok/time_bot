@@ -148,7 +148,7 @@ CELERY_TIMEZONE = TIME_ZONE
 CELERY_BEAT_SCHEDULE = {
     'send_time_to_tg_task': {
         'task': 'telegram_bot.tasks.send_message_to_telegram_task',
-        'schedule': crontab(hour='9,10,11,12,13,14,15,16,17,18,19,20,22,23',
+        'schedule': crontab(hour='6,7,8,9,10,11,12,13,14,15,16,17',
                             minute='0,30'),
     }
 }
