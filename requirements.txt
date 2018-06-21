@@ -13,3 +13,4 @@ django-extensions
 ipdb
 ipython
 slackclient==1.2.1
+newrelic==3.2.2.94
