@@ -16,3 +16,9 @@ def send_message_to_telegram_task():
     r = requests.post(url, data={'chat_id': chat_id, 'text': message})
     r.raise_for_status()
     logger.info('Sent message to telegram: {}'.format(message))
+
+
+@task
+def check_app_task():
+    logger.info('Start')
+    logger.info('End')

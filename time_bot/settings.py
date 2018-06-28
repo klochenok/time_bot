@@ -150,6 +150,11 @@ CELERY_BEAT_SCHEDULE = {
         'task': 'telegram_bot.tasks.send_message_to_telegram_task',
         'schedule': crontab(hour='6,7,8,9,10,11,12,13,14,15,16,17',
                             minute='0,30'),
+    },
+    'check_app': {
+        'task': 'telegram_bot.tasks.check_app_task',
+        'schedule': crontab(hour='6,7,8,9,10,11,12,13,14,15,16,17',
+                            minute='10,20,40,50'),
     }
 }
 
